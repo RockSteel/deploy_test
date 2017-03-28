@@ -1,8 +1,12 @@
 # config valid only for Capistrano 3.1
-lock '3.1.0'
+lock '3.4.1'
+
+# set :ssh_options, {
+#   keys: %w(/Users/yaocheng/.ssh/id_rsa_rocksteel /Users/yaocheng/.ssh/id_rsa)
+# }
 
 set :application, 'deploy_test'
-set :repo_url, 'git@github,com:rocksteel/deploy_test.git'
+set :repo_url, 'git@github.com:rocksteel/deploy_test.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
